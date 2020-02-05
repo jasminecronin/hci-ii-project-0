@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="snowyBackground0.png"/>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Left" Height="200" Margin="300,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="200">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="jon snow.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
     </Grid>
 </Window>
