@@ -9,6 +9,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.Animation;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
@@ -19,6 +20,12 @@ namespace P0
     /// </summary>
     public partial class MainWindow : Window
     {
+        Storyboard kingOfTheNorthAnimation; // satelites revolve around jon
+        Storyboard lyannaSpeechAnimation;  // pulsating Lynanna? an indication that shes talking
+        Storyboard jonAsksDaenerysAnimation;  //maybe just a john thing
+        Storyboard jonAsksWildlingsAnimation;
+        Storyboard tormund;
+
         public MainWindow()
         {
             InitializeComponent();

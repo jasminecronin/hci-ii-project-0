@@ -10,11 +10,26 @@
         <Grid.Background>
             <ImageBrush ImageSource="snowyBackground0.png"/>
         </Grid.Background>
-        <Rectangle HorizontalAlignment="Left" Height="200" Margin="300,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="200">
-            <Rectangle.Fill>
+        <Ellipse HorizontalAlignment="Left" Height="150" Margin="298.66,101.584,0,0" Stroke="Black" VerticalAlignment="Top" Width="150">
+            <Ellipse.Fill>
                 <ImageBrush ImageSource="jon snow.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="80" Margin="546.134,101.584,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.333,0.412">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="lyanna0.jpg" Stretch="UniformToFill"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="80" Margin="165.12,121.059,0,0" Stroke="Black" VerticalAlignment="Top" Width="80">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="davos.jpg" Stretch="UniformToFill"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="80" Margin="353.605,312.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="tormund.jpg" Stretch="UniformToFill"/>
+            </Ellipse.Fill>
+        </Ellipse>
 
     </Grid>
 </Window>
