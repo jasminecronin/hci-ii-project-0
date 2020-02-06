@@ -6,30 +6,272 @@
         xmlns:local="clr-namespace:P0"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Window.Resources>
+        <Storyboard x:Key="TormundAnimation"/>
+        <Storyboard x:Key="LyannaAnimation"/>
+        <Storyboard x:Key="DavosAnimation"/>
+        <Storyboard x:Key="JonAnimation"/>
+        <Storyboard x:Key="LordManAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ellipse7">
+                <EasingDoubleKeyFrame KeyTime="0:0:9.00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.01" Value="-360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="LordGlovAnimation">
+            <DoubleAnimationUsingKeyFrames x:Name="doubleAnimationUsingKeyFrames" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ellipse2">
+                <EasingDoubleKeyFrame KeyTime="0:0:9.00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.01" Value="-360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="DaenerysAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ellipse5">
+                <EasingDoubleKeyFrame KeyTime="0:0:19.01" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21.01" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="TyrionAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ellipse6">
+                <EasingDoubleKeyFrame KeyTime="0:0:19.01" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:21.01" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="WunAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ellipse4">
+                <EasingDoubleKeyFrame KeyTime="0:0:13.01" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.00" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="WildAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ellipse3">
+                <EasingDoubleKeyFrame KeyTime="0:0:13.01" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.00" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="LyanneGroupAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1">
+                <EasingDoubleKeyFrame KeyTime="0:0:9.00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.01" Value="-145.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid1">
+                <EasingDoubleKeyFrame KeyTime="0:0:9.00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.01" Value="-18"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="grid1">
+                <EasingPointKeyFrame KeyTime="0:0:9.00" Value="-0.199,0.74"/>
+                <EasingPointKeyFrame KeyTime="0:0:13.01" Value="-0.2,0.47"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse2">
+                <EasingDoubleKeyFrame KeyTime="0:0:13.01" Value="-15"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse2">
+                <EasingDoubleKeyFrame KeyTime="0:0:13.01" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse2">
+                <EasingPointKeyFrame KeyTime="0:0:13.01" Value="0.445,-1.175"/>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="TormundGroupAnimatiom">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid2">
+                <EasingDoubleKeyFrame KeyTime="0:0:13.01" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19.01" Value="-93.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20.18" Value="-93.75"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid2">
+                <EasingDoubleKeyFrame KeyTime="0:0:17.99" Value="-0.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:19.01" Value="-0.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20.18" Value="-0.75"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grid2">
+                <EasingDoubleKeyFrame KeyTime="0:0:22.02" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27.02" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="LyannaGroupFinalAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grid1">
+                <EasingDoubleKeyFrame KeyTime="0:0:22.02" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27.02" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="DavosGroupFinalAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid3">
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:22.02" Value="162"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid3">
+                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:22.02" Value="-18.75"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="grid3">
+                <EasingPointKeyFrame KeyTime="0:0:19" Value="1.088,0.7"/>
+                <EasingPointKeyFrame KeyTime="0:0:22.02" Value="0.9,0.47"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grid3">
+                <EasingDoubleKeyFrame KeyTime="0:0:22.02" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:27.02" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="InitialClick"/>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource TormundAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource LyannaAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource DavosAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource JonAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource LordManAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource LordGlovAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource DaenerysAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource TyrionAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource WunAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource WildAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource LyanneGroupAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource TormundGroupAnimatiom}"/>
+            <BeginStoryboard Storyboard="{StaticResource LyannaGroupFinalAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource DavosGroupFinalAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource InitialClick}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Margin="-23.25,0,-24.75,-86.5">
         <Grid.Background>
-            <ImageBrush ImageSource="snowyBackground0.png"/>
+            <ImageBrush ImageSource="snowyBackground0.png" Opacity="0.8"/>
         </Grid.Background>
-        <Ellipse HorizontalAlignment="Left" Height="150" Margin="298.66,101.584,0,0" Stroke="Black" VerticalAlignment="Top" Width="150">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="jon snow.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="80" Margin="546.134,101.584,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.333,0.412">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="lyanna0.jpg" Stretch="UniformToFill"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="80" Margin="165.12,121.059,0,0" Stroke="Black" VerticalAlignment="Top" Width="80">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="davos.jpg" Stretch="UniformToFill"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="80" Margin="353.605,312.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="tormund.jpg" Stretch="UniformToFill"/>
-            </Ellipse.Fill>
-        </Ellipse>
-
+        <Grid x:Name="grid" Margin="59.501,47.25,0,35.5" RenderTransformOrigin="0.472,0.269">
+            <Grid x:Name="grid2" RenderTransformOrigin="0.35,-0.495" Margin="271.001,292.75,233.249,-33.75">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Ellipse x:Name="ellipse1" HorizontalAlignment="Left" Height="80" Stroke="Black" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Margin="66.25,14.25,0,0">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="tormund.jpg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse x:Name="ellipse4" HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="-1.05,1.1" Margin="164,0,0,0">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="wunwun2.png" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse x:Name="ellipse3" HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="2.15,1.1">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="wildlings2.jpeg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </Grid>
+            <Grid x:Name="grid3" RenderTransformOrigin="1.088,0.7" Margin="0,0,553,144.75">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Ellipse x:Name="ellipse6" HorizontalAlignment="Left" Height="50" Margin="42.75,132.25,0,-29.25" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.41,-1.15">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                            <SkewTransform AngleY="0" AngleX="0"/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform X="15"/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="tyrion12.jpg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="ellipse5" HorizontalAlignment="Left" Height="50" Margin="125,0,-19.25,0" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="-0.9,1.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="daenerys7.jpg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse HorizontalAlignment="Left" Height="80" Margin="40,35.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="davos1.jpg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Grid>
+            <Grid x:Name="grid1" RenderTransformOrigin="-0.199,0.74" Margin="561.25,0,0,145">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Ellipse x:Name="ellipse2" HorizontalAlignment="Left" Height="50" Margin="67.75,135.75,0,-20.25" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.2,-1.15">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="lordGlover4.png" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="ellipse7" HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="1.92,1.53" Margin="-17.25,0,0,0">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="lordManderly3.png" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse HorizontalAlignment="Left" Height="80" Margin="37.75,36.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="80">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="lyanna0.jpg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Grid>
+            <Ellipse HorizontalAlignment="Left" Height="160" Margin="288.5,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="160">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="jon snow.png" Stretch="UniformToFill"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
     </Grid>
 </Window>
