@@ -111,32 +111,7 @@
     <Resource Include="tormund.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="davos1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lordGlover3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lordGlover4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lordManderly3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="daenerys7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="tyrion12.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="wunwun2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="wildlings2.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="snowyBackground-English0.jpg" />
->>>>>>> structure is all there just have to fix timing for sound bites
+    <Resource Include="davos.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

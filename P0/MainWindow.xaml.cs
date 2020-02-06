@@ -20,15 +20,15 @@ namespace P0
     /// </summary>
     public partial class MainWindow : Window
     {
-        //Storyboard kingOfTheNorthAnimation; // satelites revolve around jon
-        //Storyboard lyannaSpeechAnimation;  // pulsating Lynanna? an indication that shes talking
-        //Storyboard jonAsksDaenerysAnimation;  //maybe just a john thing
-        //Storyboard jonAsksWildlingsAnimation;
-        //Storyboard tormund;
+        Storyboard kingOfTheNorthAnimation; // satelites revolve around jon
+        Storyboard lyannaSpeechAnimation;  // pulsating Lynanna? an indication that shes talking
+        Storyboard jonAsksDaenerysAnimation;  //maybe just a john thing
+        Storyboard jonAsksWildlingsAnimation;
+        Storyboard tormund;
 
         public MainWindow()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
     }
 }
