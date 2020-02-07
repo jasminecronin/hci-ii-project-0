@@ -83,11 +83,18 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:57" Value="360"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="BackgroundAnimation"/>
+        <Storyboard x:Key="HoverAnimation">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(Brush.Opacity)" Storyboard.TargetName="ellipse8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
-        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
-            <BeginStoryboard Storyboard="{StaticResource TormundAnimation}"/>
-            <BeginStoryboard Storyboard="{StaticResource LyannaAnimation}"/>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="ellipse8">
+            <BeginStoryboard x:Name="TormundAnimation_BeginStoryboard" Storyboard="{StaticResource TormundAnimation}"/>
+            <BeginStoryboard x:Name="LyannaAnimation_BeginStoryboard" Storyboard="{StaticResource LyannaAnimation}"/>
             <BeginStoryboard Storyboard="{StaticResource DavosAnimation}"/>
             <BeginStoryboard Storyboard="{StaticResource JonAnimation}"/>
             <BeginStoryboard Storyboard="{StaticResource LordManAnimation}"/>
@@ -102,19 +109,31 @@
             <BeginStoryboard Storyboard="{StaticResource DavosGroupFinalAnimation}"/>
             <BeginStoryboard Storyboard="{StaticResource InitialClick}"/>
             <BeginStoryboard Storyboard="{StaticResource TormundGroupFinalAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource BackgroundAnimation}"/>
+            <BeginStoryboard x:Name="HoverAnimation_BeginStoryboard" Storyboard="{StaticResource HoverAnimation}"/>
+            <BeginStoryboard x:Name="LyannaAnimation_BeginStoryboard1" Storyboard="{StaticResource LyannaAnimation}"/>
+            <BeginStoryboard x:Name="TormundAnimation_BeginStoryboard1" Storyboard="{StaticResource TormundAnimation}"/>
         </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="ellipse8">
+            <BeginStoryboard x:Name="HoverAnimation_BeginStoryboard1" Storyboard="{StaticResource HoverAnimation}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="ellipse8">
+            <StopStoryboard BeginStoryboardName="HoverAnimation_BeginStoryboard"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
     </Window.Triggers>
     <Grid Margin="-83.25,0,-24.75,-86.5">
+        <Grid.Background>
+            <ImageBrush ImageSource="snowyBackground0.png" Opacity="0.8"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="29*"/>
             <RowDefinition Height="56*"/>
         </Grid.RowDefinitions>
-        <Grid.Background>
-            <ImageBrush ImageSource="snowyBackground0.png" Opacity="0.8"/>
-        </Grid.Background>
         <Grid x:Name="grid" Margin="-54,10,10,100" RenderTransformOrigin="0.517,0.262" Grid.RowSpan="2">
             <Grid Margin="127.25,40.5,24.643,-47.25" Height="530.25" VerticalAlignment="Top">
-                <Grid Margin="115.25,25.5,91.75,0">
+                <Grid x:Name="grid4" Margin="115.25,25.5,91.75,0">
                     <Grid x:Name="grid2" RenderTransformOrigin="0.378,-0.365" Margin="299.251,0,0,0" Height="186.833" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="293.5">
                         <Grid.LayoutTransform>
                             <TransformGroup>
@@ -165,7 +184,7 @@
                         </Ellipse>
                         <Ellipse x:Name="ellipse3" HorizontalAlignment="Right" Height="50" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="2.063,1.235" Margin="0,-6,23.357,129.5">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="wildlings.jpeg" Stretch="UniformToFill"/>
+                                <ImageBrush ImageSource="wildling2.jpeg" Stretch="UniformToFill"/>
                             </Ellipse.Fill>
                             <Ellipse.RenderTransform>
                                 <TransformGroup>
@@ -209,12 +228,12 @@
                                 </TransformGroup>
                             </Ellipse.RenderTransform>
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="daenerys5.jpg" Stretch="UniformToFill"/>
+                                <ImageBrush ImageSource="daenerys7.jpg" Stretch="UniformToFill"/>
                             </Ellipse.Fill>
                         </Ellipse>
                         <Ellipse HorizontalAlignment="Right" Height="80" Margin="0,44.5,118.75,0" Stroke="Black" VerticalAlignment="Top" Width="80">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="davos0.jpg" Stretch="UniformToFill"/>
+                                <ImageBrush ImageSource="davos1.jpg" Stretch="UniformToFill"/>
                             </Ellipse.Fill>
                         </Ellipse>
                     </Grid>
@@ -229,7 +248,7 @@
                         </Grid.RenderTransform>
                         <Ellipse HorizontalAlignment="Left" Height="80" Margin="94.083,0,0,159.25" Stroke="Black" VerticalAlignment="Bottom" Width="80">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="lyanna0.jpg" Stretch="UniformToFill"/>
+                                <ImageBrush ImageSource="lyanna3.jpg" Stretch="UniformToFill"/>
                             </Ellipse.Fill>
                         </Ellipse>
                         <Ellipse x:Name="ellipse2" HorizontalAlignment="Left" Height="50" Margin="83.166,0,0,102.167" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="1.02,-1.08">
@@ -267,9 +286,14 @@
                             </Ellipse.Fill>
                         </Ellipse>
                     </Grid>
-                    <Ellipse Height="160" Margin="330.25,0,0,284.75" Stroke="Black" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="160">
+                    <Ellipse x:Name="ellipse" HorizontalAlignment="Left" Height="160" Margin="330.25,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="160">
                         <Ellipse.Fill>
                             <ImageBrush ImageSource="jon snow.png" Stretch="UniformToFill"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse8" Height="160" Margin="330.25,0,0,284.75" Stroke="Black" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="160">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="jonSnow2.png" Stretch="UniformToFill"/>
                         </Ellipse.Fill>
                     </Ellipse>
                 </Grid>

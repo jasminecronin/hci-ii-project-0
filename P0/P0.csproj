@@ -134,5 +134,26 @@
   <ItemGroup>
     <Resource Include="tyrion5.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background-kingOfTheNorth0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IronThrone0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="snowyBackground-English0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wildling2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="daenerys7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lyanna3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="jonSnow2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
