@@ -104,7 +104,7 @@
             <BeginStoryboard Storyboard="{StaticResource TormundGroupFinalAnimation}"/>
         </EventTrigger>
     </Window.Triggers>
-    <Grid Margin="-23.25,0,-24.75,-86.5">
+    <Grid Margin="-83.25,0,-24.75,-86.5">
         <Grid.RowDefinitions>
             <RowDefinition Height="29*"/>
             <RowDefinition Height="56*"/>
@@ -112,8 +112,8 @@
         <Grid.Background>
             <ImageBrush ImageSource="snowyBackground0.png" Opacity="0.8"/>
         </Grid.Background>
-        <Grid x:Name="grid" Margin="10,75.5,35.25,100" RenderTransformOrigin="0.517,0.262" Grid.RowSpan="2">
-            <Grid x:Name="grid2" RenderTransformOrigin="0.378,-0.482" Margin="0,292.917,201.749,-47.25" Height="186.833" VerticalAlignment="Top" HorizontalAlignment="Right" Width="293.5">
+        <Grid x:Name="grid" Margin="-54,10,10,100" RenderTransformOrigin="0.517,0.262" Grid.RowSpan="2">
+            <Grid x:Name="grid2" RenderTransformOrigin="0.378,-0.365" Margin="426.501,0,0,-47.25" Height="186.833" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="293.5">
                 <Grid.LayoutTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -175,7 +175,7 @@
                     </Ellipse.RenderTransform>
                 </Ellipse>
             </Grid>
-            <Grid x:Name="grid3" RenderTransformOrigin="0.908,0.626" Margin="0,-0.25,517.75,233.5" HorizontalAlignment="Right" Width="244.75">
+            <Grid x:Name="grid3" RenderTransformOrigin="0.912,0.579" Margin="127.25,0,0,233.5" HorizontalAlignment="Left" Width="244.75" Height="199.25" VerticalAlignment="Bottom">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -216,7 +216,7 @@
                     </Ellipse.Fill>
                 </Ellipse>
             </Grid>
-            <Grid x:Name="grid1" RenderTransformOrigin="-0.035,0.403" Margin="0,-25,-0.607,145" Height="312.5" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="202.083">
+            <Grid x:Name="grid1" RenderTransformOrigin="-0.027,0.448" Margin="720.274,0,0,145" Height="312.5" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="202.083">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -225,6 +225,11 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Grid.RenderTransform>
+                <Ellipse HorizontalAlignment="Left" Height="80" Margin="94.083,0,0,159.25" Stroke="Black" VerticalAlignment="Bottom" Width="80">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="lyanna0.jpg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
                 <Ellipse x:Name="ellipse2" HorizontalAlignment="Left" Height="50" Margin="83.166,0,0,102.167" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="1.02,-1.08">
                     <Ellipse.LayoutTransform>
                         <TransformGroup>
@@ -259,13 +264,8 @@
                         <ImageBrush ImageSource="lordManderly2.png" Stretch="UniformToFill"/>
                     </Ellipse.Fill>
                 </Ellipse>
-                <Ellipse HorizontalAlignment="Left" Height="80" Margin="94.083,0,0,157.25" Stroke="Black" VerticalAlignment="Bottom" Width="80">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="lyanna0.jpg" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
             </Grid>
-            <Ellipse Height="160" Margin="0,35,304.25,0" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Right" Width="160">
+            <Ellipse Height="160" Margin="457.5,0,0,237.5" Stroke="Black" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="160">
                 <Ellipse.Fill>
                     <ImageBrush ImageSource="jon snow.png" Stretch="UniformToFill"/>
                 </Ellipse.Fill>
