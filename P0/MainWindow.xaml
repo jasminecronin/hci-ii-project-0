@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P0"
         mc:Ignorable="d"
-        Title="MainWindow" Height="549" Width="800">
+        Title="MainWindow" Height="649.5" Width="1007">
     <Window.Resources>
         <Storyboard x:Key="TormundAnimation"/>
         <Storyboard x:Key="LyannaAnimation"/>
@@ -113,163 +113,167 @@
             <ImageBrush ImageSource="snowyBackground0.png" Opacity="0.8"/>
         </Grid.Background>
         <Grid x:Name="grid" Margin="-54,10,10,100" RenderTransformOrigin="0.517,0.262" Grid.RowSpan="2">
-            <Grid x:Name="grid2" RenderTransformOrigin="0.378,-0.365" Margin="426.501,0,0,-47.25" Height="186.833" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="293.5">
-                <Grid.LayoutTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Grid.LayoutTransform>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="40*"/>
-                    <ColumnDefinition Width="37*"/>
-                    <ColumnDefinition Width="63*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Grid.RenderTransform>
-                <Ellipse x:Name="ellipse1" Height="80" Stroke="Black" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Margin="73.75,0,0,77.75" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="80">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="tormund.jpg" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                </Ellipse>
-                <Ellipse x:Name="ellipse4" Stroke="Black" RenderTransformOrigin="-1.068,1.176" Margin="5.575,-4,0,127.5" Grid.Column="2" HorizontalAlignment="Left" Width="50" Height="50" VerticalAlignment="Bottom">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="wunwun0.png" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                </Ellipse>
-                <Ellipse x:Name="ellipse3" HorizontalAlignment="Right" Height="50" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="2.063,1.235" Margin="0,-6,23.357,129.5">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="wildlings.jpeg" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                </Ellipse>
+            <Grid Margin="127.25,40.5,24.643,-47.25" Height="530.25" VerticalAlignment="Top">
+                <Grid Margin="115.25,25.5,91.75,0">
+                    <Grid x:Name="grid2" RenderTransformOrigin="0.378,-0.365" Margin="299.251,0,0,0" Height="186.833" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="293.5">
+                        <Grid.LayoutTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.LayoutTransform>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40*"/>
+                            <ColumnDefinition Width="37*"/>
+                            <ColumnDefinition Width="63*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Ellipse x:Name="ellipse1" Height="80" Stroke="Black" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Margin="73.75,0,0,77.75" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="80">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="tormund.jpg" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                        <Ellipse x:Name="ellipse4" Stroke="Black" RenderTransformOrigin="-1.068,1.176" Margin="5.575,-4,0,127.5" Grid.Column="2" HorizontalAlignment="Left" Width="50" Height="50" VerticalAlignment="Bottom">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="wunwun0.png" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                        <Ellipse x:Name="ellipse3" HorizontalAlignment="Right" Height="50" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="2.063,1.235" Margin="0,-6,23.357,129.5">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="wildlings.jpeg" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                    </Grid>
+                    <Grid x:Name="grid3" RenderTransformOrigin="0.912,0.579" Margin="-52,0,0,280.75" HorizontalAlignment="Left" Width="296.75" Height="199.25" VerticalAlignment="Bottom">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Ellipse x:Name="ellipse6" HorizontalAlignment="Right" Height="50" Margin="0,132.25,172.112,0" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.97,-0.954">
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                                    <SkewTransform AngleY="0" AngleX="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform X="15"/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="tyrion5.jpg" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse x:Name="ellipse5" HorizontalAlignment="Right" Height="50" Margin="0,0,72.75,0" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="-0.72,1.69">
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="daenerys5.jpg" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse HorizontalAlignment="Right" Height="80" Margin="0,44.5,118.75,0" Stroke="Black" VerticalAlignment="Top" Width="80">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="davos0.jpg" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Grid>
+                    <Grid x:Name="grid1" RenderTransformOrigin="-0.027,0.448" Margin="593.024,0,-106,192.25" Height="312.5" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="308.083">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Ellipse HorizontalAlignment="Left" Height="80" Margin="94.083,0,0,159.25" Stroke="Black" VerticalAlignment="Bottom" Width="80">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="lyanna0.jpg" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse x:Name="ellipse2" HorizontalAlignment="Left" Height="50" Margin="83.166,0,0,102.167" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="1.02,-1.08">
+                            <Ellipse.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform X="35.7" Y="41.25"/>
+                                </TransformGroup>
+                            </Ellipse.LayoutTransform>
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                            <Ellipse.Fill>
+                                <ImageBrush Stretch="UniformToFill" ImageSource="lordGlover3.png"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse x:Name="ellipse7" HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="1.776,1.63" Margin="48.083,0,0,237.5">
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="lordManderly2.png" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Grid>
+                    <Ellipse Height="160" Margin="330.25,0,0,284.75" Stroke="Black" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="160">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="jon snow.png" Stretch="UniformToFill"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </Grid>
             </Grid>
-            <Grid x:Name="grid3" RenderTransformOrigin="0.912,0.579" Margin="127.25,0,0,233.5" HorizontalAlignment="Left" Width="244.75" Height="199.25" VerticalAlignment="Bottom">
-                <Grid.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Grid.RenderTransform>
-                <Ellipse x:Name="ellipse6" HorizontalAlignment="Left" Height="50" Margin="22.638,132.25,0,0" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.97,-0.954">
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleY="1" ScaleX="-1"/>
-                            <SkewTransform AngleY="0" AngleX="0"/>
-                            <RotateTransform Angle="0"/>
-                            <TranslateTransform X="15"/>
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="tyrion5.jpg" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse x:Name="ellipse5" HorizontalAlignment="Left" Height="50" Margin="122,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="50" RenderTransformOrigin="-0.72,1.69">
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="daenerys5.jpg" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse HorizontalAlignment="Left" Height="80" Margin="46,44.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="80">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="davos0.jpg" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
-            </Grid>
-            <Grid x:Name="grid1" RenderTransformOrigin="-0.027,0.448" Margin="720.274,0,0,145" Height="312.5" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="202.083">
-                <Grid.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Grid.RenderTransform>
-                <Ellipse HorizontalAlignment="Left" Height="80" Margin="94.083,0,0,159.25" Stroke="Black" VerticalAlignment="Bottom" Width="80">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="lyanna0.jpg" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse x:Name="ellipse2" HorizontalAlignment="Left" Height="50" Margin="83.166,0,0,102.167" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="1.02,-1.08">
-                    <Ellipse.LayoutTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform X="35.7" Y="41.25"/>
-                        </TransformGroup>
-                    </Ellipse.LayoutTransform>
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                    <Ellipse.Fill>
-                        <ImageBrush Stretch="UniformToFill" ImageSource="lordGlover3.png"/>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse x:Name="ellipse7" HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Bottom" Width="50" RenderTransformOrigin="1.776,1.63" Margin="48.083,0,0,237.5">
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="lordManderly2.png" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
-            </Grid>
-            <Ellipse Height="160" Margin="457.5,0,0,237.5" Stroke="Black" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="160">
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="jon snow.png" Stretch="UniformToFill"/>
-                </Ellipse.Fill>
-            </Ellipse>
         </Grid>
     </Grid>
 </Window>
