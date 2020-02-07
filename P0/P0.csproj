@@ -113,5 +113,26 @@
   <ItemGroup>
     <Resource Include="davos.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="davos1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lordGlover3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wunwun0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wildlings.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="davos0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="daenerys5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tyrion5.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
